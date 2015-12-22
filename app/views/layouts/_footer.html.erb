@@ -1,0 +1,10 @@
+<footer class="footer">
+  <small>
+    <%= yield %>
+    <% if Rails.env.development? %>
+        <%= debug(params)  %>
+        <%= debug(params.to_s)  %>
+    </br>
+    <% end %>
+  </small>
+</footer>

@@ -9,6 +9,8 @@ class UserDashboard < Administrate::BaseDashboard
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
     id: Field::Number,
+    wins: Field::Number,
+    losses: Field::Number,
     email: Field::String,
     encrypted_password: Field::String,
     reset_password_token: Field::String,
@@ -34,6 +36,8 @@ class UserDashboard < Administrate::BaseDashboard
     :email,
     :encrypted_password,
     :reset_password_token,
+    :wins,
+    :losses
   ]
 
   # SHOW_PAGE_ATTRIBUTES

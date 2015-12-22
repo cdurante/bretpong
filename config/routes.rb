@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :scoreboards
+  resources :matches
+  resources :games
   namespace :admin do
     DashboardManifest::DASHBOARDS.each do |dashboard_resource|
       resources dashboard_resource
